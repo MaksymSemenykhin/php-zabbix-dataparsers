@@ -14,18 +14,18 @@ host to connect to
 
 
 test :
-zabbix_agent -t couchdb-dbs_size_detailed[_db]
-zabbix_agent -t couchdb-dbs_size_detailed[_agent]
-zabbix_agent -t couchdb-dbs_size_detailed[_ext_task]
-zabbix_agent -t couchdb-dbs_size_detailed[_int_task]
-zabbix_agent -t couchdb-dbs_size_detailed[_private]
-zabbix_agent -t couchdb-dbs_size_detailed[_quiz]
-zabbix_agent -t couchdb-dbs_size_detailed[_user_]
-zabbix_agent -t couchdb-dbs_size_detailed[_public]
-zabbix_agent -t couchdb-dbs_size_detailed[_query]
-zabbix_agent -t couchdb-dbs_size_detailed[_replicator]
-zabbix_agent -t couchdb-dbs_size_detailed[_users]
-zabbix_agent -t couchdb-dbs_size_detailed[_course_]
+zabbix_agentd -t couchdb-dbs_size_detailed[_db]
+zabbix_agentd -t couchdb-dbs_size_detailed[_agent]
+zabbix_agentd -t couchdb-dbs_size_detailed[_ext_task]
+zabbix_agentd -t couchdb-dbs_size_detailed[_int_task]
+zabbix_agentd -t couchdb-dbs_size_detailed[_private]
+zabbix_agentd -t couchdb-dbs_size_detailed[_quiz]
+zabbix_agentd -t couchdb-dbs_size_detailed[_user_]
+zabbix_agentd -t couchdb-dbs_size_detailed[_public]
+zabbix_agentd -t couchdb-dbs_size_detailed[_query]
+zabbix_agentd -t couchdb-dbs_size_detailed[_replicator]
+zabbix_agentd -t couchdb-dbs_size_detailed[_users]
+zabbix_agentd -t couchdb-dbs_size_detailed[_course_]
 
 php -f /etc/zabbix/scripts/dbs_size_detailed.php _db http://127.0.0.1:5985
 php -f /etc/zabbix/scripts/dbs_size_detailed.php _agent http://127.0.0.1:5985
